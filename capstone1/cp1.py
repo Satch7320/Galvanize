@@ -15,6 +15,25 @@ def subtable(category):
     df = late_csv[late_csv['main_category'] == category]
     return df
 
+def bootstrap(samp, num_bs_sam = 10000):
+    bs = []
+    
+    for _ in range(num_bs_sam):
+        bs.append(np.random.choice(samp, size = len(samp)))
+        
+    return bs
+
+def bootstrap_ci(sample, stat_function=np.mean, num_resamp = 10000, ci = .95):
+    bs = bootstrap(sample, num_resamp)
+    
+    stat_list = []
+    
+    for row in range(len(bs)):
+        stat_list.append(np.percentile(stat_function(bs[row]),ci))
+        #print(row)
+    
+    return np.percentile(sample,ci), stat_list
+
 cats = set(late_csv['main_category'])
 sub_cats = set(late_csv['category'])
 state_number_map = {'failed':0, 'successful':1, 'live':2, 
