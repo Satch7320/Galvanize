@@ -34,6 +34,9 @@ def bootstrap_ci(sample, stat_function=np.mean, num_resamp = 10000, ci = .95):
     
     return np.percentile(sample,ci), stat_list
 
+def series_norm(series):
+    return (series - series.mean()) / (series.max() - series.min())
+
 cats = set(late_csv['main_category'])
 sub_cats = set(late_csv['category'])
 state_number_map = {'failed':0, 'successful':1, 'live':2, 
