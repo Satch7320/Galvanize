@@ -1,5 +1,5 @@
 # Capstone 1: Kickstarter Projects
-I chose to do my exploratory data analysis on a collection of nearly 400,000 kickstarter projects. Columns included project start/completion date, status, and backer and pledge counts.This dataset was fortunately quite clean already, but had a small handful of snags. There were a small number of null values, but some columns had values that were probably placeholders (like launch dates from the '70s). I tried to find these projects on kickstarter for clues about this using their search function on name and ID, but ultimately came up empty-handed. 
+I chose to do my exploratory data analysis on a collection of nearly 400,000 kickstarter projects. Columns included project start/completion date, status, and backer and pledge counts. This dataset was fortunately quite clean already with only a small handful of snags. The null values were easy enough to normalize, but some columns had aberrant values that were probably placeholders (like launch dates from the '70s). I tried to find these projects on kickstarter for clues about this using their search function on name and ID, but ultimately came up empty-handed. 
 
     
 ## Exploratory Data Analysis
