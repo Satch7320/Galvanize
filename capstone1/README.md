@@ -28,7 +28,11 @@ Moving into the bulk of the data, the Seaborn library had some readily available
 If interested, breakdowns for the sub-categories are stored in the [images folder](images/subcategories) to save space. 
 
 ### How The Pieces Fit
-While it is self-explanatory that projects without *any* backers would be failed or cancelled, the concentration of small goal amounts, backer counts, and pledges against the extreme outliers made the scale difficult to present. For that reason, I used Seaborn's pointplot to estimate the expected amounts of backers to a project's success.
+The most obvious question I felt to ask was 'how successful are Kickstarter projects in general?'
+
+![Success State Count](images/state_dist.png)
+
+Seems convincing enough that the successful projects aren't the norm. Being a crowdfunding site, projects hinge on getting a little support from a lot of people. While it is self-explanatory that projects without *any* backers would be failed or cancelled, the concentration of small goal amounts, backer counts, and pledges against the extreme outliers made the scale difficult to present. For that reason, I used Seaborn's pointplot to estimate the expected amounts of backers to a project's success.
 
 ![Backer : Success](images/Backer_Success.png)
 
