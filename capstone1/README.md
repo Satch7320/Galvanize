@@ -52,8 +52,10 @@ Seems convincing enough that the successful projects aren't the norm. Being a cr
 In the above graph, we can easily tell that successful projects in Design, Games, and Technology had particularly high concentrations of backers. This prompted me to ask: what did the success breakdowns look like for these three categories?
 
 |![Design](images/sub_states/Design_subcat_state.png)|
+|:--:|
 |![Games](images/sub_states/Games_subcat_state.png)|
 |![Technology](images/sub_states/Technology_subcat_state.png)|
+
 
 The most apparent and curious part of these graphs is that, while the relation of backers to success in a category follows the expected trend of indicating success, it can be misleading. The Technology category (and Games, to a lesser extent) was hiding a staggering number of failed projects. 
 
