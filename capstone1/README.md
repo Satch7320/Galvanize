@@ -43,6 +43,7 @@ The most apparent and curious part of these graphs is that, while the relation o
 After narrowing down which categories had some interesting dimensions, I looked at the goals in the subcategories to see if any interesting trends cropped up. 
 
 ![Goals](images/goal_points.png)
+![Goal:State](images/goal_to_state.png)
 
 Unsurprisingly, the overwhelming majority of these projects had goals at nice, round figures. The culprits for our earlier observations regarding high success in these categories came from projects that were themselves outliers; I've scaled this graph down, but there are points reaching the millions range here!
         
