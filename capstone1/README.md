@@ -56,9 +56,9 @@ Unsurprisingly, the overwhelming majority of these projects had goals at nice, r
 For my hypothesis test, I posited that 
 
     H0: There is no difference in pledge amounts of categories by population.
-    H1: 
+    H1: These is a different in pledge amounts of categories by population.
 
-Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledge totals each with replacement from the largest category (Film & Video) and the smallest category (Dance). This helped me better evaluate centrality in the amounts with less distortion from the extreme outliers. I worked on total amount raised in a project, to maintain an accurate representation of projects without backers in the set.
+Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledge totals each with replacement from the largest category (Film & Video) and the smallest category (Dance). This helped me better evaluate centrality in the amounts with less distortion from the extreme outliers (like the handful of unbacked Film projects asking for 100 million USD!). I worked on total amount raised in a project, to maintain an accurate representation of projects without backers in the set.
 I wanted to be quite certain that seeing a difference in pledge amounts were convincing, so I chose a critical alpha of .02. I then used the ScipyStats t-test to evaluate how different the pledge amounts were in the two categories.
 
 ![ttest](images/pledge_likelihood.png)
