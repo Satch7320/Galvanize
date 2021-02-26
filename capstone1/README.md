@@ -4,7 +4,7 @@ I chose to do my exploratory data analysis on a collection of nearly 400,000 Kic
 ## Exploratory Data Analysis
 ### First Pass
 ![Descriptive Statistics](images/ks_db_describe.png "Descriptive Statistics")
-While the data was generally applicable, I noticed that a few columns seemed redundant. The 'USD_' categories were presumably meant to convert currencies into a singular format for easier tabulation. However, a quick inspection revealed that currencies were already overwhelmingly USD anyway. 
+While the data was generally applicable, I noticed that a few columns seemed redundant. The 'USD_' categories were presumably meant to convert currencies into a singular format for easier tabulation, but these were also the source of my null values! However, a quick inspection revealed that currencies were already overwhelmingly USD anyway. 
 
 ![Normalized Currencies](images/norm_cur.png "Normalized Currency Distribution")
 
@@ -55,14 +55,15 @@ Unsurprisingly, the overwhelming majority of these projects had goals at nice, r
 
 For my hypothesis test, I posited that 
 
-    There is no difference in pledge amounts of categories of different sizes.
+    H0: There is no difference in pledge amounts of categories by population.
+    H1: 
 
-Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledges each with replacement from the largest category (Film & Video) and the smallest category (Dance). This helped me better evaluate centrality in the pledges with less distortion from the extreme outliers. I wanted to be quite certain that seeing a difference in pledge amounts were convincing, so I chose an alpha of .02. I then used the ScipyStats t-test to evaluate how different the pledge amounts were in the two categories.
+Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledge totals each with replacement from the largest category (Film & Video) and the smallest category (Dance). This helped me better evaluate centrality in the amounts with less distortion from the extreme outliers. I worked on total amount raised in a project, to maintain an accurate representation of projects without backers in the set.
+I wanted to be quite certain that seeing a difference in pledge amounts were convincing, so I chose a critical alpha of .02. I then used the ScipyStats t-test to evaluate how different the pledge amounts were in the two categories.
 
 ![ttest](images/pledge_likelihood.png)
 
-The graph and test result give a clear indication that a crowdfunding project works how one might expect: a great number of small amounts. However, the pvalue tells us that there is a substantial difference in the pledge amounts between the projects, so we can say that a more popular category tend to have different (greater) pledge amounts.
-
+The graph and test result give a clear indication that, while projects in both categories have a high concentration around 4000-5000, the amounts pledged in Film exceed those of Dance with regularity. The pvalue tells us that there is a substantial difference in the pledge amounts between the projects, so we can reject H0 and state that a more popular category tends to have different (greater) pledge amounts.
 
 ## Future Ideas
 * Observe relationship of pledges through lifetime of a project
