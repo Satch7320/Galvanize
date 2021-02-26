@@ -55,14 +55,13 @@ Unsurprisingly, the overwhelming majority of these projects had goals at nice, r
 
 For my hypothesis test, I posited that 
 
-    a given project in the most populous category (Film & Video) would be 
-    more likely to generate revenue than a project in a less populous category (Dance). 
+    There is no difference in pledge amounts of categories of different sizes.
 
-Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledges with replacement from each of the two categories. This helped me better evaluate centrality in the pledges with less distortion from the extreme outliers. I then used the ScipyStats t-test to evaluate how different the pledge amounts were in the two categories
+Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledges each with replacement from the largest category (Film & Video) and the smallest category (Dance). This helped me better evaluate centrality in the pledges with less distortion from the extreme outliers. I wanted to be quite certain that seeing a difference in pledge amounts were convincing, so I chose an alpha of .02. I then used the ScipyStats t-test to evaluate how different the pledge amounts were in the two categories.
 
 ![ttest](images/ttest.png)
 
-The graph and test result give a clear indication that a crowdfunding project works how one might expect: a great number of small amounts. For that reason, we can not say that a project in a more populous category is necessarily any more likely of receiving larger pledges.
+The graph and test result give a clear indication that a crowdfunding project works how one might expect: a great number of small amounts. However, the pvalue tells us that there is a substantial difference in the pledge amounts between the projects, so we can say that a more popular category tend to have different (greater) pledge amounts.
 
 
 ## Future Ideas
