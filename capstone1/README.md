@@ -32,7 +32,7 @@ While it is self-explanatory that projects without *any* backers would be failed
 
 ![Backer : Success](images/Backer_Success.png)
 
-In the above graph, we can easily tell that Design, Games, and Technology are the most backed categories. What did the success breakdowns look like for these three categories?
+In the above graph, we can easily tell that successful projects in Design, Games, and Technology had particularly high concentrations of backers. This prompted me to ask: what did the success breakdowns look like for these three categories?
 
 ![Design](images/sub_states/Design_subcat_state.png)
 ![Games](images/sub_states/Games_subcat_state.png)
