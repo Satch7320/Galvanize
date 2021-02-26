@@ -51,7 +51,8 @@ Unsurprisingly, the overwhelming majority of these projects had goals at nice, r
 
 For my hypothesis test, I posited that 
 
-    a given project in the most populous category (Film & Video) would be more likely to generate revenue than a project in a less populous category (Dance). 
+    a given project in the most populous category (Film & Video) would be 
+    more likely to generate revenue than a project in a less populous category (Dance). 
 
 Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledges with replacement from each of the two categories. This helped me better evaluate centrality in the pledges with less distortion from the extreme outliers. I then used the ScipyStats t-test to evaluate how different the pledge amounts were in the two categories
 
@@ -64,3 +65,4 @@ The graph and test result give a clear indication that a crowdfunding project wo
 * Observe relationship of pledges through lifetime of a project
 * Where do the pledges come from? 
 * How to handle the project 'states' better -- weighting 'canceled' vs. 'failed' vs. 'suspended'
+* I opted not to work with converted data points; is there something meaningful buried in the data of pledges from non-domestic sources?
