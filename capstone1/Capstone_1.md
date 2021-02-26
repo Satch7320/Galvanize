@@ -40,20 +40,26 @@ In the above graph, we can easily tell that Design, Games, and Technology are th
 
 The most apparent and curious part of these graphs is that, while the relation of backers to success in a category follows the expected trend of indicating success, it can be misleading. The Technology category (and Games, to a lesser extent) was hiding a staggering number of failed projects. 
 
-        breakdown of subcategory per category
-        normalized distribution of success/failures per category
-    What category is most successful?
-    Does a category make more on average than others?
-    While the number of backers is predictably indicative of pledge *totals*, neither of these bore a strong relation to a project's success
+After narrowing down which categories had some interesting dimensions, I looked at the goals in the subcategories to see if any interesting trends cropped up. 
+
+![Goals](/images/goal_points.png)
+
+Unsurprisingly, the overwhelming majority of these projects had goals at nice, round figures. The culprits for our earlier observations regarding high success in these categories came from projects that were themselves outliers; I've scaled this graph down, but there are points reaching the millions range here!
         
 ## Hypothesis Tests
-    Projects in more popular categories are more likely to succeed
 
-### Sampling Comparisons
-    Take bootstrapped mean of most popular category (Film & Video). T-test this value against all other means, to determine its likelihood of success.
+For my hypothesis test, I posited that 
+
+    a given project in the most populous category (Film & Video) would be more likely to generate revenue than a project in a less populous category (Dance). 
+
+Because I had so many projects in the dataset, I created my sample sets by choosing 10,000 pledges with replacement from each of the two categories. This helped me better evaluate centrality in the pledges with less distortion from the extreme outliers. I then used the ScipyStats t-test to evaluate how different the pledge amounts were in the two categories
+
+![ttest](/images/ttest.png)
+
+The graph and test result give a clear indication that a crowdfunding project works how one might expect: a great number of small amounts. For that reason, we can not say that a project in a more populous category is necessarily any more likely of receiving larger pledges.
+
 
 ## Future Ideas
-    Observe relationship of pledges through lifetime of a project
-    Where do the pledges come from? 
-
-vocabulary of a statistical test
+* Observe relationship of pledges through lifetime of a project
+* Where do the pledges come from? 
+* How to handle the project 'states' better -- weighting 'canceled' vs. 'failed' vs. 'suspended'
