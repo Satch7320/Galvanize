@@ -32,8 +32,6 @@ Next, I saw that the 'length' column I calculated using 'launched' and 'pledged'
 
 Moving into the bulk of the data, the Seaborn library had some readily available tools for representing categorical data -- namely, it gave easily digestible breakdowns of the sub-categories, e.g. genres in Film & Video, by color-coding them. 
 
-![Film & Video Genres](images/subcategories/Film&Video.png "Film & Video category breakdown")
-
 If interested, breakdowns for the sub-categories are stored in the [images folder](images/subcategories) to save space. 
 
 ### How The Pieces Fit
