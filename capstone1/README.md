@@ -81,7 +81,7 @@ I wanted to be quite certain that seeing a difference in pledge amounts were con
 
 |![ttest](images/pledge_likelihood.png)|
 |:--:|
-|How likely is it that a pledge amount is seen in both categories?|
+|How different are the observed pledge amounts?|
 
 The graph and test result give a clear indication that, while projects in both categories have a high concentration around 4000-5000, the amounts pledged in Film exceed those of Dance with regularity. The pvalue tells us that there is a substantial difference in the pledge amounts between the projects, so we can reject H0 and state that a more popular category tends to have different (greater) pledge amounts.
 
