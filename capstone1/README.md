@@ -1,4 +1,6 @@
-# Capstone 1: Kickstarter Projects
+# Analysis of Kickstarter Projects
+## Metrics of Success
+
 I chose to do my exploratory data analysis on a collection of nearly 400,000 Kickstarter projects. Columns included project start/completion date, status, goal, and backer and pledge counts. This dataset was fortunately quite clean already with only a small handful of snags. 
     
 ## Exploratory Data Analysis
